@@ -1,0 +1,11 @@
+<% include layoutTop %>
+<h1>Login required</h1>
+
+<p>You must <a href="javascript:do_login()">login</a> with an authorized email address to view this site.</p>
+
+<script>
+function do_login() {
+  navigator.id.request({siteName: "Where in the World is <%= owner %>?"});
+}
+</script>
+<% include layoutBottom %>

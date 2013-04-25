@@ -1,0 +1,22 @@
+{
+  "name": "whereintheworld",
+  "author": "Francois Marier <francois@fmarier.org> (http://fmarier.org)",
+  "version": "0.0.1",
+  "homepage": "https://whereisfrancois.personatest.org",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fmarier/whereintheworld"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "ejs": "0.8.x",
+    "express": "3.2.x",
+    "qs": "0.6.x"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "main": "index"
+}

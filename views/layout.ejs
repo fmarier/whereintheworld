@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Where in the World is <%= owner %>?</title>
+</head>
+<body>
+
+<%- body %>
+
+<script src="https://login.persona.org/include.js"></script>
+<script>
+navigator.id.watch({
+  loggedInUser: <%= user %>,
+  onlogin: function (assertion) {
+    $.post("/login", {assertion: assertion}, function (data) {
+      if (data != "okay") {
+        navigator.id.logout();
+      }
+    window.location = "/";
+    });
+  },
+  onlogout: function () {
+    window.location = "/logout";
+}});
+</script>
+</body>
+</html>

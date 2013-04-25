@@ -1,0 +1,39 @@
+<% include layoutTop %>
+<h1>Where in the World is <%= owner %>?</h1>
+
+<% function link_to_if(name, target) { %>
+  <% if (target) { %>
+    <a href="<%= target %>"><%= name %></a>
+  <% } else { %>
+    <%= name %>
+  <% } %>
+<% } %>
+
+<% function leg_link(leg) { %>
+  <% if (leg.id) { %>
+    <% var target %>
+    <% if (leg.mode == 'plane') { %>
+      <% target = 'http://flightaware.com/live/flight/' + leg.id %>
+    <% } %>
+
+    (<% link_to_if(leg.id, target) %>)
+  <% } %></li>
+<% } %>
+
+<% function leg(info) { %>
+    <li><%= info.origin %> <%= info.departure %> to <%= info.destination %> <%= info.arrival %>
+    <% leg_link(info) %></li>
+<% } %>
+
+<h2>Trips</h2>
+
+<ul>
+<% for (name in trips) { %>
+  <li><% link_to_if(name, trips[name].url) %>
+  <ul><% trips[name].legs.forEach(leg); %></ul>
+  </li>
+<% } %>
+</ul>
+
+<p><a href="javascript:navigator.id.logout()">Logout</a></p>
+<% include layoutBottom %>
