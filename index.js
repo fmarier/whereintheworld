@@ -5,10 +5,18 @@ const https = require('https');
 const qs = require('qs');
 
 const DB_FILE = 'db.json';
+const AIRPORT_FILE = 'airports.json';
 const BROWSERID_AUDIENCE = 'http://localhost:3000';
 const SESSION_SECRET = crypto.randomBytes(128) + '';
 
-const db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
+var db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
+
+// FIXME: dirty hacks to make these accessible within template functions :(
+GLOBAL.months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+GLOBAL.airports;
+if (AIRPORT_FILE) {
+  airports = JSON.parse(fs.readFileSync(AIRPORT_FILE, 'utf8'));
+}
 
 var app = express();
 
@@ -45,6 +53,7 @@ app.get('/', function (req, res) {
   }
 
   templateVars.trips = db.trips;
+  templateVars.airports = airports;
   res.render('index.ejs', templateVars);
 });
 

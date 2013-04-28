@@ -9,20 +9,48 @@
   <% } %>
 <% } %>
 
+<% function airline_icon(flightnumber) { %>
+  <% var IATACode = flightnumber.substring(0, 2).toLowerCase(); %>
+  <% return '<img width="16" heigh="16" src="/img/iata/' + IATACode + '.png">' %>
+<% } %>
+
 <% function leg_link(leg) { %>
   <% if (leg.id) { %>
-    <% var target %>
-    <% if (leg.mode == 'plane') { %>
-      <% target = 'http://flightaware.com/live/flight/' + leg.id %>
-    <% } %>
+    (<%- airline_icon(leg.id) %><% link_to_if(leg.id, 'http://flightaware.com/live/flight/' + leg.id) %>)
+  <% } %>
+<% } %>
 
-    (<% link_to_if(leg.id, target) %>)
-  <% } %></li>
+<% function city_link(city) { %>
+  <% if (airports[city]) { %>
+    <% link_to_if(airports[city].city, airports[city].url) %>
+  <% } else { %>
+    <%= city %>
+  <% } %>
+<% } %>
+
+<% function zero_padded(number) { %>
+  <% return (number < 10) ? "0" + number : "" + number; %>
+<% } %>
+
+<% function fixed_time(string, comparison_string) { %>
+  <% var d = new Date(string); %>
+  <%= zero_padded(d.getUTCHours()) %>:<%= zero_padded(d.getUTCMinutes()) %>
+  <% if (comparison_string) { %>
+    <% var comp = new Date(comparison_string); %>
+    <% if (d.getUTCDate() != comp.getUTCDate() || d.getUTCMonth() != comp.getUTCMonth() || d.getUTCFullYear() != comp.getUTCFullYear()) {%>
+      [<%= short_date(string) %>]
+    <% } %>
+  <% } %>
+<% } %>
+
+<% function short_date(string) { %>
+  <% var d = new Date(string) %>
+  <% return d.getUTCDate() + ' ' + months[d.getUTCMonth()] %>
 <% } %>
 
 <% function leg(info) { %>
-    <li><%= info.origin %> <%= info.departure %> to <%= info.destination %> <%= info.arrival %>
-    <% leg_link(info) %></li>
+  <li><%= short_date(info.departure) %>: <% city_link(info.origin) %> <% fixed_time(info.departure) %> ✈ <% city_link(info.destination) %> <% fixed_time(info.arrival, info.departure) %>
+  <% leg_link(info) %></li>
 <% } %>
 
 <h2>Trips</h2>

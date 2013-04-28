@@ -1,0 +1,52 @@
+{
+  "AKL": {
+    "city": "Auckland",
+    "url": "http://www.aucklandairport.co.nz/",
+    "timezone": "Pacific/Auckland"
+  },
+  "CLT": {
+    "city": "Charlotte",
+    "url": "http://www.charlotteairport.com/",
+    "timezone": "America/New_York"
+  },
+  "JAX": {
+    "city": "Jacksonville",
+    "url": "http://www.flyjacksonville.com/",
+    "timezone": "America/New_York"
+  },
+  "LAX": {
+    "city": "Los Angeles",
+    "url": "http://www.lawa.org/welcomeLAX.aspx",
+    "timezone": "America/Los_Angeles"
+  },
+  "OOL": {
+    "city": "Gold Coast",
+    "url": "http://goldcoastairport.com.au/",
+    "timezone": "Australia/Brisbane"
+  },
+  "ORD": {
+    "city": "Chicago",
+    "url": "http://www.flychicago.com/ohare",
+    "timezone": "America/Chicago"
+  },
+  "PDX": {
+    "city": "Portland",
+    "url": "http://www.portofportland.com/PDX_Home.aspx",
+    "timezone": "America/Los_Angeles"
+  },
+  "SFO": {
+    "city": "San Francisco",
+    "url": "http://www.flysfo.com/",
+    "timezone": "America/Los_Angeles"
+  },
+  "WLG": {
+    "city": "Wellington",
+    "url": "http://www.wellingtonairport.co.nz/",
+    "timezone": "Pacific/Auckland"
+  },
+  "YVR": {
+    "city": "Vancouver",
+    "url": "http://www.yvr.ca/",
+    "timezone": "America/Vancouver"
+  }
+}
