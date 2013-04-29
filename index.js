@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Where in the World
 // Copyright (C) 2013  Francois Marier <francois@fmarier.org>
 //
