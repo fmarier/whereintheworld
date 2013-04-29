@@ -22,9 +22,10 @@ const fs = require('fs');
 const https = require('https');
 const qs = require('qs');
 
-const DB_FILE = 'db.json';
-const AIRPORT_FILE = 'airports.json';
-const BROWSERID_AUDIENCE = 'http://localhost:3000';
+const DATA_DIR = process.env['DATA_DIR'] || '.';
+const DB_FILE = DATA_DIR + '/db.json';
+const AIRPORT_FILE = DATA_DIR + '/airports.json';
+const BROWSERID_AUDIENCE = process.env['BROWSERID_AUDIENCE'] || 'http://localhost:3000';
 const SESSION_SECRET = crypto.randomBytes(128) + '';
 
 var db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
@@ -116,4 +117,5 @@ app.get('/logout', function (req, res) {
   res.redirect('/');
 });
 
-app.listen(3000);
+app.listen(process.env['PORT'] || 3000, '127.0.0.1');
+console.log('Application available at ' + process.env['PUBLIC_URL']);
