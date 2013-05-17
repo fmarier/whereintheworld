@@ -6,10 +6,12 @@ Simple application to share your travel plans with friends, family and colleague
 
 1. clone the repository
 2. install all dependencies
-      npm install
+
+        npm install
 3. write a JSON database file (see `sampledb.json`)
 4. start the application
-      npm start
+
+        npm start
 5. open <http://localhost:3000> in your browser
 
 ## Deploying using awsbox
@@ -20,10 +22,12 @@ TODO
 
 1. edit `db.json`
 2. copy the db to the app server
-      scp db.json app@whereisfrancois.personatest.org:code/
+
+        scp db.json app@whereisfrancois.personatest.org:code/
 3. restart the service
-      ssh app@whereisfrancois.personatest.org
-      forever restartall
+
+        ssh app@whereisfrancois.personatest.org
+        forever restartall
 
 ## Copyright notice
 
