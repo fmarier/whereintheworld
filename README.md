@@ -7,7 +7,7 @@ Simple application to share your travel plans with friends, family and colleague
 1. clone the repository
 2. install all dependencies
     npm install
-3. write a JSON database file
+3. write a JSON database file (see `sampledb.json`)
 4. start the application
     npm start
 5. open <http://localhost:3000> in your browser

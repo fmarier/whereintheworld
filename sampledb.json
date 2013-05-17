@@ -1,0 +1,19 @@
+{
+  "owner": "François",
+  "acl": {
+    "domains": [ "mozilla.com" ],
+    "emails": ["francois@fmarier.org"]
+  },
+  "trips": {
+    "Vancouver Work Week": {
+      "legs": [
+        {"origin": "AKL", "destination": "YVR",
+         "departure": "2013-05-05T20:00", "arrival": "2013-05-05T14:15",
+         "mode": "plane", "id": "NZ84"},
+        {"origin": "YVR", "destination": "AKL",
+         "departure": "2013-05-10T20:00", "arrival": "2013-05-12T05:00",
+         "mode": "plane", "id": "NZ83"}
+      ]
+    }
+  }
+}
