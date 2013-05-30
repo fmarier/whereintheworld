@@ -17,6 +17,18 @@
     "url": "http://www.charlotteairport.com/",
     "timezone": "America/New_York"
   },
+  "DUS": {
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "url": "http://www.duesseldorf-international.de/dus_en/",
+    "timezone": "Europe/Berlin"
+  },
+  "EDI": {
+    "city": "Edinburgh",
+    "country": "UK",
+    "url": "http://www.edinburghairport.com/",
+    "timezone": "Europe/London"
+  },
   "FRA": {
     "city": "Frankfurt",
     "country": "Germany",
@@ -29,6 +41,12 @@
     "url": "http://www.infraero.com.br/index.php/us/airports/rio-de-janeiro/rio-de-janeiro-international-airport.html",
     "timezone": "America/Sao_Paulo"
   },
+  "HAM": {
+    "city": "Hamburg",
+    "country": "Germany",
+    "url": "http://www.ham.airport.de",
+    "timezone": "Europe/Berlin"
+  },
   "JAX": {
     "city": "Jacksonville",
     "country": "USA",
@@ -40,6 +58,12 @@
     "country": "USA",
     "url": "http://www.lawa.org/welcomeLAX.aspx",
     "timezone": "America/Los_Angeles"
+  },
+  "LHR": {
+    "city": "London",
+    "country": "UK",
+    "url": "http://www.heathrowairport.com/",
+    "timezone": "Europe/London"
   },
   "OOL": {
     "city": "Gold Coast",
