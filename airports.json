@@ -41,6 +41,12 @@
     "url": "http://www.infraero.com.br/index.php/us/airports/rio-de-janeiro/rio-de-janeiro-international-airport.html",
     "timezone": "America/Sao_Paulo"
   },
+  "GRU": {
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "url": "http://www.infraero.com.br/index.php/us/airports/sao-paulo/sao-paulo-international-airport.html",
+    "timezone": "America/Sao_Paulo"
+  },
   "HAM": {
     "city": "Hamburg",
     "country": "Germany",
@@ -88,6 +94,12 @@
     "country": "Brazil",
     "url": "http://www.infraero.gov.br/index.php/us/airports/rio-grande-do-sul/salgado-filho-international-airport.html",
     "timezone": "America/Sao_Paulo"
+  },
+  "SCL": {
+    "city": "Santiago",
+    "country": "Chile",
+    "url": "http://www.aeropuertosantiago.cl/english/",
+    "timezone": "America/Santiago"
   },
   "SFO": {
     "city": "San Francisco",
