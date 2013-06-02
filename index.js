@@ -118,4 +118,4 @@ app.get('/logout', function (req, res) {
 });
 
 app.listen(process.env['PORT'] || 3000, '127.0.0.1');
-console.log('Application available at ' + process.env['PUBLIC_URL']);
+console.log('Application available at ' + BROWSERID_AUDIENCE);
