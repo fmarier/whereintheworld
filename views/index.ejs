@@ -14,9 +14,19 @@
   <% return '<img width="16" heigh="16" src="/img/iata/' + IATACode + '.png">' %>
 <% } %>
 
+<% function train_icon(train_number) { %>
+  <% var internal_code = train_number.substring(0, 3).toLowerCase(); %>
+  <% return '<img width="16" heigh="16" src="/img/train/' + internal_code + '.png">' %>
+<% } %>
+
 <% function leg_link(leg) { %>
   <% if (leg.id) { %>
-    (<%- airline_icon(leg.id) %><% link_to_if(leg.id, 'http://flightaware.com/live/flight/' + leg.id) %>)
+    <% if ('plane' === leg.mode) { %>
+      (<%- airline_icon(leg.id) %><% link_to_if(leg.id, 'http://flightaware.com/live/flight/' + leg.id) %>)
+    <% } else if ('train' === leg.mode) { %>
+    <% /* http://reservia.viarail.ca/tsi/GetTrainStatus.aspx?TsiCCode=VIA&TsiTrainNumber=622&TrainInstanceDate=2013-06-15 */ %>
+      (<%- train_icon(leg.id) %><%= leg.id %>)
+    <% } %>
   <% } %>
 <% } %>
 
@@ -49,7 +59,13 @@
 <% } %>
 
 <% function leg(info) { %>
-  <li><%= short_date(info.departure) %>: <% city_link(info.origin) %> <% fixed_time(info.departure) %> ✈ <% city_link(info.destination) %> <% fixed_time(info.arrival, info.departure) %>
+  <li><%= short_date(info.departure) %>: <% city_link(info.origin) %> <% fixed_time(info.departure) %>
+  <% if ('plane' === info.mode) { %>
+✈
+  <% } else { %>
+—
+  <% } %>
+  <% city_link(info.destination) %> <% fixed_time(info.arrival, info.departure) %>
   <% leg_link(info) %></li>
 <% } %>
 
