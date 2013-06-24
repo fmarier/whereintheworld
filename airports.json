@@ -118,5 +118,11 @@
     "country": "Canada",
     "url": "http://www.yvr.ca/",
     "timezone": "America/Vancouver"
+  },
+  "YYZ": {
+    "city": "Toronto",
+    "country": "Canada",
+    "url": "http://torontopearson.com/",
+    "timezone": "America/New_York"
   }
 }
