@@ -11,4 +11,4 @@ pushcode:
 
 deploy: pushcode uploaddb
 
-update: updatedb
+update: uploaddb
