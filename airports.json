@@ -11,6 +11,12 @@
     "url": "http://www.brusselsairport.be",
     "timezone": "Europe/Brussels"
   },
+  "CDG": {
+    "city": "Paris",
+    "country": "France",
+    "url": "http://www.aeroportsdeparis.fr",
+    "timezone": "Europe/Paris"
+  },
   "CLT": {
     "city": "Charlotte",
     "country": "USA",
@@ -100,6 +106,12 @@
     "country": "Chile",
     "url": "http://www.aeropuertosantiago.cl/english/",
     "timezone": "America/Santiago"
+  },
+  "SIN": {
+    "city": "Singapore",
+    "country": "Singapore",
+    "url": "http://www.changiairport.com/",
+    "timezone": "Asia/Singapore"
   },
   "SFO": {
     "city": "San Francisco",
