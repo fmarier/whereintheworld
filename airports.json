@@ -125,6 +125,18 @@
     "url": "http://www.wellingtonairport.co.nz/",
     "timezone": "Pacific/Auckland"
   },
+  "YTZ": {
+    "city": "Toronto",
+    "country": "Canada",
+    "url": "http://www.torontoport.com/airport.aspx",
+    "timezone": "America/Toronto"
+  },
+  "YUL": {
+    "city": "Montréal",
+    "country": "Canada",
+    "url": "http://www.admtl.com",
+    "timezone": "America/Montreal"
+  },
   "YVR": {
     "city": "Vancouver",
     "country": "Canada",
@@ -135,6 +147,6 @@
     "city": "Toronto",
     "country": "Canada",
     "url": "http://torontopearson.com/",
-    "timezone": "America/New_York"
+    "timezone": "America/Toronto"
   }
 }
