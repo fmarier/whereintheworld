@@ -5,6 +5,12 @@
     "url": "http://www.aucklandairport.co.nz/",
     "timezone": "Pacific/Auckland"
   },
+  "BLR": {
+    "city": "Bangalore",
+    "country": "India",
+    "url": "http://www.bengaluruairport.com",
+    "timezone": "Asia/Kolkata"
+  },
   "BRU": {
     "city": "Brussels",
     "country": "Belgium",
