@@ -71,6 +71,12 @@
     "url": "http://www.flyjacksonville.com/",
     "timezone": "America/New_York"
   },
+  "KUL": {
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "url": "http://www.klia.com.my/",
+    "timezone": "Asia/Kuala_Lumpur"
+  },
   "LAX": {
     "city": "Los Angeles",
     "country": "USA",
