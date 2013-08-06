@@ -89,6 +89,12 @@
     "url": "http://www.heathrowairport.com/",
     "timezone": "Europe/London"
   },
+  "MEL": {
+    "city": "Melbourne",
+    "country": "Australia",
+    "url": "http://www.melbourneairport.com.au/",
+    "timezone": "Australia/Melbourne"
+  },
   "OOL": {
     "city": "Gold Coast",
     "country": "Australia",
@@ -106,6 +112,12 @@
     "country": "USA",
     "url": "http://www.portofportland.com/PDX_Home.aspx",
     "timezone": "America/Los_Angeles"
+  },
+  "PER": {
+    "city": "Perth",
+    "country": "Australia",
+    "url": "http://www.perthairport.net.au/",
+    "timezone": "Australia/Perth"
   },
   "POA": {
     "city": "Porto Alegre",
@@ -130,6 +142,12 @@
     "country": "USA",
     "url": "http://www.flysfo.com/",
     "timezone": "America/Los_Angeles"
+  },
+  "SYD": {
+    "city": "Sydney",
+    "country": "Australia",
+    "url": "http://www.sydneyairport.com.au/",
+    "timezone": "Australia/Sydney"
   },
   "WLG": {
     "city": "Wellington",
