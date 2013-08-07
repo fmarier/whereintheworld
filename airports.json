@@ -41,6 +41,12 @@
     "url": "http://www.edinburghairport.com/",
     "timezone": "Europe/London"
   },
+  "EWR": {
+    "city": "Newark",
+    "country": "USA",
+    "url": "http://www.newarkairport.com/",
+    "timezone": "America/New_York"
+  },
   "FRA": {
     "city": "Frankfurt",
     "country": "Germany",
