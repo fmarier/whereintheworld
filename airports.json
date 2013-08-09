@@ -71,6 +71,12 @@
     "url": "http://www.ham.airport.de",
     "timezone": "Europe/Berlin"
   },
+  "HKG": {
+    "city": "Hong Kong",
+    "country": "China",
+    "url": "http://www.hongkongairport.com/",
+    "timezone": "Asia/Hong_Kong"
+  },
   "JAX": {
     "city": "Jacksonville",
     "country": "USA",
@@ -100,6 +106,12 @@
     "country": "Australia",
     "url": "http://www.melbourneairport.com.au/",
     "timezone": "Australia/Melbourne"
+  },
+  "MNL": {
+    "city": "Manila",
+    "country": "Philippines",
+    "url": "http://www.miaa.gov.ph",
+    "timezone": "Asia/Manila"
   },
   "OOL": {
     "city": "Gold Coast",
