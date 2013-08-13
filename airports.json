@@ -29,6 +29,12 @@
     "url": "http://www.charlotteairport.com/",
     "timezone": "America/New_York"
   },
+  "DEL": {
+    "city": "New Delhi",
+    "country": "India",
+    "url": "http://www.newdelhiairport.in/",
+    "timezone": "Asia/Kolkata"
+  },
   "DUS": {
     "city": "Düsseldorf",
     "country": "Germany",
