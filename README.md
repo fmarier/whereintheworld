@@ -16,7 +16,12 @@ Simple application to share your travel plans with friends, family and colleague
 
 ## Deploying using awsbox
 
-TODO
+1. create a new VM
+
+    node_modules/.bin/awsbox create -d -t t1.micro -p whereisfrancois.crt  -s whereisfrancois.key  --ssl force -u https://whereisfrancois.personatest.org -n whereisfrancois
+2. deploy the code
+
+    make deploy
 
 ### Updating the database
 
