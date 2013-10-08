@@ -11,6 +11,7 @@
     "node": "0.8.x"
   },
   "dependencies": {
+    "browserid-verify": ">= 0.1.2",
     "ejs": "0.8.x",
     "express": "3.2.x",
     "qs": "0.6.x"

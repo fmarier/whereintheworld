@@ -21,6 +21,7 @@ const express = require('express');
 const fs = require('fs');
 const https = require('https');
 const qs = require('qs');
+const verify = require('browserid-verify')();
 
 const DATA_DIR = process.env['DATA_DIR'] || '.';
 const DB_FILE = DATA_DIR + '/db.json';
@@ -77,39 +78,18 @@ app.get('/', function (req, res) {
 });
 
 app.post('/login', function (req, res) {
-    function onVerifyResp(verifierRes) {
-      var data = "";
-      verifierRes.on('data', function (chunk) {
-        data += chunk;
-      });
-
-      verifierRes.on('end', function () {
-        var verified = JSON.parse(data);
-        if ('okay' == verified.status) {
-          req.session.user = verified.email;
-        } else {
-          delete req.session.user;
-        }
-        res.send(verified.status);
-      });
-    };
-
-    var body = qs.stringify({
-      assertion: req.body.assertion,
-      audience: BROWSERID_AUDIENCE
-    });
-
-    var request = https.request({
-      host: 'verifier.login.persona.org',
-      path: '/verify',
-      method: 'POST',
-      headers: {
-        'content-type': 'application/x-www-form-urlencoded',
-        'content-length': body.length
+    verify(req.body.assertion, BROWSERID_AUDIENCE, function(err, email, response) {
+      if (err) {
+        return console.log('There was an error : ' + err);
       }
-    }, onVerifyResp);
-    request.write(body);
-    request.end();
+
+      if (email) {
+        req.session.user = response.email;
+      } else {
+        delete req.session.user;
+      }
+      res.send(response.status);
+    });
 });
 
 app.get('/logout', function (req, res) {
