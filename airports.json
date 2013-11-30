@@ -23,6 +23,12 @@
     "url": "http://www.aeroportsdeparis.fr",
     "timezone": "Europe/Paris"
   },
+  "CHT": {
+    "city": "Chatham Islands",
+    "country": "New Zealand",
+    "url": "https://en.wikipedia.org/wiki/Tuuta_Airport",
+    "timezone": "Pacific/Chatham"
+  },
   "CLT": {
     "city": "Charlotte",
     "country": "USA",
