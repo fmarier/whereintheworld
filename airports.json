@@ -89,6 +89,12 @@
     "url": "http://www.hongkongairport.com/",
     "timezone": "Asia/Hong_Kong"
   },
+  "HBA": {
+    "city": "Hobart",
+    "country": "Australia",
+    "url": "http://www.hobartairport.com.au/",
+    "timezone": "Australia/Hobart"
+  },
   "JAX": {
     "city": "Jacksonville",
     "country": "USA",
