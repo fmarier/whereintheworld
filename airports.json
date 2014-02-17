@@ -167,6 +167,12 @@
     "url": "http://www.infraero.gov.br/index.php/us/airports/rio-grande-do-sul/salgado-filho-international-airport.html",
     "timezone": "America/Sao_Paulo"
   },
+  "RAR": {
+    "city": "Rarotonga",
+    "country": "Cook Islands",
+    "url": "http://www.cookislandsairports.com/",
+    "timezone": "Pacific/Rarotonga"
+  },
   "SCL": {
     "city": "Santiago",
     "country": "Chile",
