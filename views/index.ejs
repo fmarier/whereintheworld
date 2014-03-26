@@ -22,7 +22,7 @@
 <% function leg_link(leg) { %>
   <% if (leg.id) { %>
     <% if ('plane' === leg.mode) { %>
-      (<%- airline_icon(leg.id) %><% link_to_if(leg.id, 'http://www.flightradar24.com/' + leg.id) %>)
+      (<%- airline_icon(leg.id) %><% link_to_if(leg.id, 'http://flightaware.com/live/flight/' + leg.id) %>)
     <% } else if ('train' === leg.mode) { %>
     <% /* http://reservia.viarail.ca/tsi/GetTrainStatus.aspx?TsiCCode=VIA&TsiTrainNumber=622&TrainInstanceDate=2013-06-15 */ %>
       (<%- train_icon(leg.id) %><%= leg.id %>)
