@@ -137,6 +137,12 @@
     "url": "http://www.munich-airport.de",
     "timezone": "Europe/Berlin"
   },
+  "NOU": {
+    "city": "Nouméa",
+    "country": "New Caledonia",
+    "url": "http://www.tontouta-aeroport.nc/",
+    "timezone": "Pacific/Noumea"
+  },
   "OOL": {
     "city": "Gold Coast",
     "country": "Australia",
