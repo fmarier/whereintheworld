@@ -41,6 +41,12 @@
     "url": "http://www.newdelhiairport.in/",
     "timezone": "Asia/Kolkata"
   },
+  "DEN": {
+    "city": "Denver",
+    "country": "USA",
+    "url": "http://www.flydenver.com/",
+    "timezone": "America/Denver"
+  },
   "DUS": {
     "city": "Düsseldorf",
     "country": "Germany",
@@ -209,6 +215,18 @@
     "url": "http://www.wellingtonairport.co.nz/",
     "timezone": "Pacific/Auckland"
   },
+  "YEG": {
+    "city": "Edmonton",
+    "country": "Canada",
+    "url": "http://flyeia.com/",
+    "timezone": "America/Edmonton"
+  },
+  "YQB": {
+    "city": "Québec",
+    "country": "Canada",
+    "url": "http://www.aeroportdequebec.com/",
+    "timezone": "America/Montreal"
+  },
   "YTZ": {
     "city": "Toronto",
     "country": "Canada",
@@ -226,6 +244,12 @@
     "country": "Canada",
     "url": "http://www.yvr.ca/",
     "timezone": "America/Vancouver"
+  },
+  "YYC": {
+    "city": "Calgary",
+    "country": "Canada",
+    "url": "http://www.calgaryairport.com/",
+    "timezone": "America/Edmonton"
   },
   "YYZ": {
     "city": "Toronto",
