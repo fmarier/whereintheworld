@@ -18,10 +18,10 @@ Simple application to share your travel plans with friends, family and colleague
 
 1. create a new VM
 
-    node_modules/.bin/awsbox create -d -p whereisfrancois.crt -s whereisfrancois.key --ssl force -u https://whereisfrancois.personatest.org -n whereisfrancois
+        node_modules/.bin/awsbox create -d -p whereisfrancois.crt -s whereisfrancois.key --ssl force -u https://whereisfrancois.personatest.org -n whereisfrancois
 2. deploy the code
 
-    make deploy
+        make deploy
 
 ### Updating the database
 
@@ -36,7 +36,7 @@ Simple application to share your travel plans with friends, family and colleague
 
 ## Copyright notice
 
-Copyright (C) 2013  Francois Marier <francois@fmarier.org>
+Copyright (C) 2013, 2014  Francois Marier <francois@fmarier.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
