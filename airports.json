@@ -71,6 +71,11 @@
     "url": "http://www.frankfurt-airport.com",
     "timezone": "Europe/Berlin"
   },
+  "GEA": {
+    "city": "Nouméa",
+    "country": "New Caledonia",
+    "timezone": "Pacific/Noumea"
+  },
   "GIG": {
     "city": "Rio de Janeiro",
     "country": "Brazil",
@@ -100,6 +105,11 @@
     "country": "Australia",
     "url": "http://www.hobartairport.com.au/",
     "timezone": "Australia/Hobart"
+  },
+  "ILP": {
+    "city": "Îles des Pins",
+    "country": "New Caledonia",
+    "timezone": "Pacific/Noumea"
   },
   "JAX": {
     "city": "Jacksonville",
