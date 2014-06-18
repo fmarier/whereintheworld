@@ -123,6 +123,12 @@
     "url": "http://www.klia.com.my/",
     "timezone": "Asia/Kuala_Lumpur"
   },
+  "LAS": {
+    "city": "Las Vegas",
+    "country": "USA",
+    "url": "http://www.mccarran.com/",
+    "timezone": "America/Los_Angeles"
+  },
   "LAX": {
     "city": "Los Angeles",
     "country": "USA",
