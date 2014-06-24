@@ -43,7 +43,8 @@ var app = express();
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.use(express.cookieParser());
-  app.use(express.session({ secret: SESSION_SECRET }));
+  app.disable('x-powered-by');
+  app.use(express.session({ secret: SESSION_SECRET, key: 'sessionId' }));
   app.use(express.bodyParser());
   app.use(express.static(__dirname + '/public'));
 });
