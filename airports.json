@@ -94,17 +94,23 @@
     "url": "http://www.ham.airport.de",
     "timezone": "Europe/Berlin"
   },
+  "HBA": {
+    "city": "Hobart",
+    "country": "Australia",
+    "url": "http://www.hobartairport.com.au/",
+    "timezone": "Australia/Hobart"
+  },
   "HKG": {
     "city": "Hong Kong",
     "country": "China",
     "url": "http://www.hongkongairport.com/",
     "timezone": "Asia/Hong_Kong"
   },
-  "HBA": {
-    "city": "Hobart",
-    "country": "Australia",
-    "url": "http://www.hobartairport.com.au/",
-    "timezone": "Australia/Hobart"
+  "HNL": {
+    "city": "Honolulu",
+    "country": "USA",
+    "url": "http://hawaii.gov/hnl",
+    "timezone": "Pacific/Honolulu"
   },
   "ILP": {
     "city": "Îles des Pins",
