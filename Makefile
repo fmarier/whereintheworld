@@ -3,8 +3,7 @@ test:
 	json_verify < db.json
 
 uploaddb: test
-	scp db.json app@whereisfrancois.personatest.org:code/
-	ssh app@whereisfrancois.personatest.org forever restartall
+	scp db.json nodeuser@whereis.fmarier.org:whereintheworld/
 
 pushcode:
 	git push whereisfrancois HEAD:master
