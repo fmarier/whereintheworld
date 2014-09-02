@@ -4,6 +4,8 @@ test:
 
 uploaddb: test
 	scp db.json nodeuser@whereis.fmarier.org:whereintheworld/
+	ssh nodeuser@whereis.fmarier.org killall node || true
+	ssh nodeuser@whereis.fmarier.org /home/nodeuser/restart_service.sh &
 
 pushcode:
 	git push whereisfrancois HEAD:master
