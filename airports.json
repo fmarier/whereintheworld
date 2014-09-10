@@ -117,6 +117,11 @@
     "country": "New Caledonia",
     "timezone": "Pacific/Noumea"
   },
+  "IUE": {
+    "city": "Alofi",
+    "country": "Niue",
+    "timezone": "Pacific/Niue"
+  },
   "JAX": {
     "city": "Jacksonville",
     "country": "USA",
