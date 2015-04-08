@@ -171,6 +171,12 @@
     "url": "http://www.munich-airport.de",
     "timezone": "Europe/Berlin"
   },
+  "NLK": {
+    "city": "Norfolk Island",
+    "country": "Norfolk Island",
+    "url": "http://www.airport.gov.nf/",
+    "timezone": "Pacific/Norfolk"
+  },
   "NOU": {
     "city": "Nouméa",
     "country": "New Caledonia",
