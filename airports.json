@@ -35,6 +35,12 @@
     "url": "http://www.charlotteairport.com/",
     "timezone": "America/New_York"
   },
+  "CPH": {
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "url": "http://www.cph.dk/en/",
+    "timezone": "Europe/Copenhagen"
+  },
   "DEL": {
     "city": "New Delhi",
     "country": "India",
@@ -242,6 +248,12 @@
     "country": "Australia",
     "url": "http://www.sydneyairport.com.au/",
     "timezone": "Australia/Sydney"
+  },
+  "TXL": {
+    "city": "Berlin",
+    "country": "Germany",
+    "url": "http://www.berlin-airport.de/en/travellers-txl/index.php",
+    "timezone": "Europe/Berlin"
   },
   "WLG": {
     "city": "Wellington",
