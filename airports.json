@@ -5,6 +5,12 @@
     "url": "http://www.aucklandairport.co.nz/",
     "timezone": "Pacific/Auckland"
   },
+  "ARN": {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "url": "http://www.swedavia.com/arlanda/",
+    "timezone": "Europe/Stockholm"
+  },
   "BLR": {
     "city": "Bangalore",
     "country": "India",
