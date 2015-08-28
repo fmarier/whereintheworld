@@ -59,6 +59,12 @@
     "url": "http://www.flydenver.com/",
     "timezone": "America/Denver"
   },
+  "DFW": {
+    "city": "Dallas",
+    "country": "USA",
+    "url": "https://www.dfwairport.com/",
+    "timezone": "America/Chicago"
+  },
   "DUS": {
     "city": "Düsseldorf",
     "country": "Germany",
@@ -164,6 +170,12 @@
     "country": "UK",
     "url": "http://www.heathrowairport.com/",
     "timezone": "Europe/London"
+  },
+  "MCO": {
+    "city": "Orlando",
+    "country": "USA",
+    "url": "http://www.orlandoairports.net/",
+    "timezone": "America/New_York"
   },
   "MEL": {
     "city": "Melbourne",
