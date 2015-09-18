@@ -47,6 +47,12 @@
     "url": "http://www.cph.dk/en/",
     "timezone": "Europe/Copenhagen"
   },
+  "CTS": {
+    "city": "Sapporo",
+    "country": "Japan",
+    "url": "Asia/Tokyo",
+    "timezone": "http://www.new-chitose-airport.jp/en"
+  },
   "DEL": {
     "city": "New Delhi",
     "country": "India",
@@ -123,6 +129,12 @@
     "country": "China",
     "url": "http://www.hongkongairport.com/",
     "timezone": "Asia/Hong_Kong"
+  },
+  "HND": {
+    "city": "Tokyo",
+    "country": "Japan",
+    "url": "Asia/Tokyo",
+    "timezone": "http://www.tokyo-airport-bldg.co.jp/en/"
   },
   "HNL": {
     "city": "Honolulu",
@@ -206,6 +218,12 @@
     "country": "New Caledonia",
     "url": "http://www.tontouta-aeroport.nc/",
     "timezone": "Pacific/Noumea"
+  },
+  "NRT": {
+    "city": "Tokyo",
+    "country": "Japan",
+    "url": "Asia/Tokyo",
+    "timezone": "http://www.narita-airport.jp/en"
   },
   "OOL": {
     "city": "Gold Coast",
