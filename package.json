@@ -2,13 +2,13 @@
   "name": "whereintheworld",
   "author": "Francois Marier <francois@fmarier.org> (http://fmarier.org)",
   "version": "0.0.1",
-  "homepage": "https://whereisfrancois.personatest.org",
+  "homepage": "https://whereisfrancois.herokuapp.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fmarier/whereintheworld"
+    "url": "https://github.com/fmarier/whereintheworld"
   },
   "engines": {
-    "node": "0.8.x"
+    "node": "0.10.x"
   },
   "dependencies": {
     "browserid-verify": ">= 0.1.2",
@@ -19,5 +19,5 @@
   "scripts": {
     "start": "./index.js"
   },
-  "main": "index"
+  "main": "index.js"
 }
