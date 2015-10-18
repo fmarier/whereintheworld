@@ -1,5 +1,7 @@
 # Where in the World
 
+[![Build Status](https://travis-ci.org/fmarier/whereintheworld.svg?branch=master)](https://travis-ci.org/fmarier/whereintheworld)
+
 Simple application to share your travel plans with friends, family and colleagues.
 
 ## Installation
