@@ -1,8 +1,9 @@
 deploy: pushcode uploaddb
 
 test:
-	json_verify < airports.json
-	json_verify < db.json
+	@echo -n "airports.json: "
+	@json_verify < airports.json
+	@if [ -e db.json ] ; then echo -n "db.json: " ; json_verify < db.json ; else true ; fi
 
 uploaddb: test
 	scp db.json nodeuser@whereis.fmarier.org:whereintheworld/
