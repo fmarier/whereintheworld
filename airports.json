@@ -50,8 +50,8 @@
   "CTS": {
     "city": "Sapporo",
     "country": "Japan",
-    "url": "Asia/Tokyo",
-    "timezone": "http://www.new-chitose-airport.jp/en"
+    "url": "http://www.new-chitose-airport.jp/en",
+    "timezone": "Asia/Tokyo"
   },
   "DEL": {
     "city": "New Delhi",
@@ -133,8 +133,8 @@
   "HND": {
     "city": "Tokyo",
     "country": "Japan",
-    "url": "Asia/Tokyo",
-    "timezone": "http://www.tokyo-airport-bldg.co.jp/en/"
+    "url": "http://www.tokyo-airport-bldg.co.jp/en/",
+    "timezone": "Asia/Tokyo"
   },
   "HNL": {
     "city": "Honolulu",
@@ -222,8 +222,8 @@
   "NRT": {
     "city": "Tokyo",
     "country": "Japan",
-    "url": "Asia/Tokyo",
-    "timezone": "http://www.narita-airport.jp/en"
+    "url": "http://www.narita-airport.jp/en",
+    "timezone": "Asia/Tokyo"
   },
   "OOL": {
     "city": "Gold Coast",
