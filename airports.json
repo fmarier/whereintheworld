@@ -303,6 +303,12 @@
     "url": "http://flyeia.com/",
     "timezone": "America/Edmonton"
   },
+  "YOW": {
+    "city": "Ottawa",
+    "country": "Canada",
+    "url": "http://yow.ca",
+    "timezone": "America/Toronto"
+  },
   "YQB": {
     "city": "Québec",
     "country": "Canada",
