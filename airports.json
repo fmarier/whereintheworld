@@ -153,6 +153,12 @@
     "country": "New Caledonia",
     "timezone": "Pacific/Noumea"
   },
+  "INV": {
+    "city": "Inverness",
+    "country": "UK",
+    "url": "http://www.hial.co.uk/inverness-airport/",
+    "timezone": "Europe/London"
+  },
   "IUE": {
     "city": "Alofi",
     "country": "Niue",
@@ -290,6 +296,12 @@
     "country": "Australia",
     "url": "http://www.sydneyairport.com.au/",
     "timezone": "Australia/Sydney"
+  },
+  "TPE": {
+    "city": "Taipei",
+    "country": "Taiwan",
+    "url": "http://www.taoyuan-airport.com/english/Index/",
+    "timezone": "Asia/Taipei"
   },
   "TXL": {
     "city": "Berlin",
