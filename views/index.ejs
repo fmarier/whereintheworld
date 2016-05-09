@@ -62,8 +62,12 @@
   <li><%= short_date(info.departure) %>: <% city_link(info.origin) %> <% fixed_time(info.departure) %>
   <% if ('plane' === info.mode) { %>
 ✈
+  <% } else if ('train' === info.mode) { %>
+<!--🚅--->&mdash;
+  <% } else if ('ferry' === info.mode) { %>
+⛴
   <% } else { %>
-🚅
+&mdash;
   <% } %>
   <% city_link(info.destination) %> <% fixed_time(info.arrival, info.departure) %>
   <% leg_link(info) %></li>
