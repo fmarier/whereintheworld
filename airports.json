@@ -11,6 +11,12 @@
     "url": "http://www.swedavia.com/arlanda/",
     "timezone": "Europe/Stockholm"
   },
+  "BLI": {
+    "city": "Bellingham",
+    "country": "USA",
+    "url": "http://www.portofbellingham.com/27/Airport",
+    "timezone": "America/Los_Angeles"
+  },
   "BLR": {
     "city": "Bangalore",
     "country": "India",
@@ -289,6 +295,12 @@
     "city": "San Francisco",
     "country": "USA",
     "url": "http://www.flysfo.com/",
+    "timezone": "America/Los_Angeles"
+  },
+  "SJC": {
+    "city": "San Jose",
+    "country": "USA",
+    "url": "http://www.flysanjose.com/",
     "timezone": "America/Los_Angeles"
   },
   "SYD": {
