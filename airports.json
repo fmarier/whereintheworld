@@ -369,6 +369,12 @@
     "url": "http://www.calgaryairport.com/",
     "timezone": "America/Edmonton"
   },
+  "YYF": {
+    "city": "Penticton",
+    "country": "Canada",
+    "url": "http://www.cyyf.ca/",
+    "timezone": "America/Vancouver"
+  },
   "YYZ": {
     "city": "Toronto",
     "country": "Canada",
