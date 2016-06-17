@@ -333,6 +333,12 @@
     "url": "http://flyeia.com/",
     "timezone": "America/Edmonton"
   },
+  "YLW": {
+    "city": "Kelowna",
+    "country": "Canada",
+    "url": "http://www.kelowna.ca/CM/Page68.aspx",
+    "timezone": "America/Vancouver"
+  },
   "YOW": {
     "city": "Ottawa",
     "country": "Canada",
