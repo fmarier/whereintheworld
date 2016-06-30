@@ -285,6 +285,12 @@
     "url": "http://www.aeropuertosantiago.cl/english/",
     "timezone": "America/Santiago"
   },
+  "SEA": {
+    "city": "Seattle",
+    "country": "USA",
+    "url": "https://www.portseattle.org/Sea-Tac/Pages/default.aspx",
+    "timezone": "America/Los_Angeles"
+  },
   "SIN": {
     "city": "Singapore",
     "country": "Singapore",
