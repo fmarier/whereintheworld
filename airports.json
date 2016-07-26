@@ -201,6 +201,12 @@
     "url": "http://www.heathrowairport.com/",
     "timezone": "Europe/London"
   },
+  "LIS": {
+    "city": "Lisbon",
+    "country": "Portugal",
+    "url": "http://www.ana.pt/en-US/Pages/Homepage.aspx",
+    "timezone": "Europe/Lisbon"
+  },
   "MCO": {
     "city": "Orlando",
     "country": "USA",
