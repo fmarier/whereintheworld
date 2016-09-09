@@ -177,6 +177,12 @@
     "url": "http://www.flyjacksonville.com/",
     "timezone": "America/New_York"
   },
+  "KOA": {
+    "city": "Kona",
+    "country": "USA",
+    "url": "http://hawaii.gov/koa",
+    "timezone": "Pacific/Honolulu"
+  },
   "KUL": {
     "city": "Kuala Lumpur",
     "country": "Malaysia",
