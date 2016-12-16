@@ -154,6 +154,12 @@
     "url": "http://www.flydulles.com/",
     "timezone": "America/New_York"
   },
+  "ICN": {
+    "city": "Seoul",
+    "country": "South Korea",
+    "url": "http://www.airport.kr/pa/en/a/index.jsp",
+    "timezone": "Asia/Seoul"
+  },
   "ILP": {
     "city": "Îles des Pins",
     "country": "New Caledonia",
@@ -273,6 +279,12 @@
     "url": "http://www.portofportland.com/PDX_Home.aspx",
     "timezone": "America/Los_Angeles"
   },
+  "PEK": {
+    "city": "Bejing",
+    "country": "China",
+    "url": "http://en.bcia.com.cn/",
+    "timezone": "Asia/Shanghai"
+  },
   "PER": {
     "city": "Perth",
     "country": "Australia",
@@ -284,6 +296,12 @@
     "country": "Brazil",
     "url": "http://www.infraero.gov.br/index.php/us/airports/rio-grande-do-sul/salgado-filho-international-airport.html",
     "timezone": "America/Sao_Paulo"
+  },
+  "PVG": {
+    "city": "Shangai",
+    "country": "China",
+    "url": "http://en.shairport.com/",
+    "timezone": "Asia/Shanghai"
   },
   "RAR": {
     "city": "Rarotonga",
