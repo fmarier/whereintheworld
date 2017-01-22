@@ -7,38 +7,16 @@ Simple application to share your travel plans with friends, family and colleague
 ## Installation
 
 1. clone the repository
-2. install all dependencies
+2. write a JSON database file (see `sampledb.json`)
 
-        npm install
-3. write a JSON database file (see `sampledb.json`)
-4. start the application
+### Usage
 
-        npm start
-5. open <http://localhost:3000> in your browser
-
-## Deploying using awsbox
-
-1. create a new VM
-
-        node_modules/.bin/awsbox create -d -p whereisfrancois.crt -s whereisfrancois.key --ssl force -u https://whereisfrancois.personatest.org -n whereisfrancois
-2. deploy the code
-
-        make deploy
-
-### Updating the database
-
-1. edit `db.json`
-2. copy the db to the app server
-
-        scp db.json app@whereisfrancois.personatest.org:code/
-3. restart the service
-
-        ssh app@whereisfrancois.personatest.org
-        forever restartall
+1. generate the HTML page: `make index.html`
+2. copy the HTML page to the serve: `make upload`
 
 ## Copyright notice
 
-Copyright (C) 2013, 2014  Francois Marier <francois@fmarier.org>
+Copyright (C) 2013, 2014, 2017  Francois Marier <francois@fmarier.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as

@@ -1,0 +1,182 @@
+#!/usr/bin/python3
+"""
+Where in the World
+Copyright (C) 2013, 2014, 2017  Francois Marier <francois@fmarier.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
+import argparse
+import codecs
+from datetime import datetime
+import json
+import os.path
+import sys
+
+
+VERSION = '2.0'
+
+HTML_HEADER = '''<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Where in the World is %s?</title>
+</head>
+<body>
+
+<h1>Where in the World is %s?</h1>
+
+<h2>Trips</h2>
+'''
+
+HTML_FOOTER = '''
+</body>
+</html>
+'''
+
+AIRPORTS = {}
+with codecs.open('airports.json', 'r', 'utf-8') as fh:
+    AIRPORTS = json.loads(fh.read())
+
+
+def city_link(city):
+    if city in AIRPORTS:
+        details = AIRPORTS[city]
+        return '<a href="' + details['url'] + '">' + details['city'] + '</a>'
+    else:
+        return city
+
+
+def flight_link(trip_id):
+    iata_code = trip_id[0:2].lower()
+    image = '<img width="16" heigh="16" src="/img/iata/' + iata_code +'.png">'
+    url = 'http://flightaware.com/live/flight/' + trip_id
+    return '<a href="' + url + '">' + image  + trip_id[2:] + '</a>'
+
+
+def train_link(trip_id, datetimestr):
+    internal_code = trip_id[0:3].lower()
+    image = '<img width="16" heigh="16" src="/img/train/' + internal_code + '.png">'
+    url = ''
+    if internal_code == 'via':
+        d = datetime.strptime(datetimestr, '%Y-%m-%dT%H:%M')
+        date = d.strftime('%Y-%m-%d')
+        url = 'http://reservia.viarail.ca/tsi/GetTrainStatus.aspx?TsiCCode=VIA&TsiTrainNumber=%s&TrainInstanceDate=%s' % (trip_id[3:], date)
+    # TODO: add support for Amtrak tracking URLs
+    if url:
+        return '<a href="' + url + '">' + image + trip_id[3:] + '</a>'
+    else:
+        return image + trip_id[3:]
+
+
+def date(datetimestr):
+    d = datetime.strptime(datetimestr, '%Y-%m-%dT%H:%M')
+    return d.strftime('%d %b')
+
+
+def time(datetimestr):
+    t = datetime.strptime(datetimestr, '%Y-%m-%dT%H:%M')
+    return t.strftime('%H:%M')
+
+
+def dateline_crossing(departure, arrival):
+    departure_day = datetime.strptime(departure, '%Y-%m-%dT%H:%M').strftime('%d')
+    a = datetime.strptime(arrival, '%Y-%m-%dT%H:%M')
+    arrival_day = a.strftime('%d')
+    if departure_day != arrival_day:
+        return ' [<b>' + a.strftime('%d %b') + '</b>]'
+    else:
+        return ''
+
+def print_legs(legs):
+    for leg in legs:
+        origin = city_link(leg['origin'])
+        destination = city_link(leg['destination'])
+
+        departure_date = date(leg['departure'])
+        departure_time = time(leg['departure'])
+        arrival_date = date(leg['arrival'])
+        arrival_time = time(leg['arrival'])
+
+        mode = leg['mode']
+        trip_id = leg['id']
+        separator = '&mdash;'
+        if mode == 'plane':
+            separator = '✈'
+            trip_id = flight_link(trip_id)
+        elif mode == 'train':
+            # separator = '🚅'
+            trip_id = train_link(trip_id, leg['arrival'])
+        elif mode == 'ferry':
+            separator = '⛴'
+
+        optional_date = dateline_crossing(leg['departure'], leg['arrival'])
+        print('      <li>' + departure_date + ': ' + origin + ' ' + departure_time + ' ' +
+              separator + ' ' + destination + ' ' + arrival_time + optional_date + ' (' + trip_id + ')</li>')
+
+
+def print_trips(trips):
+    if len(trips) < 1:
+        return
+
+    print("<ul>")
+
+    for trip in trips:
+        name = trip['name']
+        if 'url' in trip:
+            url = trip['url']
+            name = '<a href="%s">%s</a>' % (url, name)
+
+        print('  <li>' + name)
+
+        if 'legs' in trip:
+            print('    <ul>')
+            print_legs(trip['legs'])
+            print('    </ul>')
+
+        print('  </li>')
+
+    print("</ul>")
+
+
+def generate_itinerary(tripdetails):
+    trips = {}
+    with codecs.open(tripdetails, 'r', 'utf-8') as fh:
+        trips = json.loads(fh.read())
+
+    owner = trips['owner']
+    print(HTML_HEADER % (owner, owner))
+    print_trips(trips['trips'])
+    print(HTML_FOOTER)
+    return True
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Travel details generator.')
+    parser.add_argument('tripdetails', type=str,
+                        help='the trip details file to parse')
+    parser.add_argument('-V', '--version', action='version',
+                        version='whereintheworld %s' % VERSION)
+    args = parser.parse_args()
+
+    if not os.path.isfile(args.tripdetails):
+        print("Error: '%s' not found" % args.tripdetails, file=sys.stderr)
+        return False
+    return generate_itinerary(args.tripdetails)
+
+if main():
+    exit(0)
+else:
+    exit(1)
