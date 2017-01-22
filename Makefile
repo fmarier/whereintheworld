@@ -1,4 +1,4 @@
-deploy: upload
+all: index.html test
 
 clean:
 	@rm -f index.html
@@ -13,5 +13,3 @@ index.html: db.json whereintheworld
 
 upload: index.html
 	@scp -r index.html public/* whereis.fmarier.org:/var/www/whereis-fmarier/
-
-update: upload
