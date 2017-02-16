@@ -8,7 +8,7 @@ test:
 	@json_verify < airports.json
 	@if [ -e db.json ] ; then echo -n "db.json: " ; json_verify < db.json ; else true ; fi
 
-index.html: db.json whereintheworld
+index.html: db.json whereintheworld airports.json
 	@./whereintheworld db.json > index.html
 
 upload: index.html
