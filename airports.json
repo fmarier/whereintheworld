@@ -23,6 +23,12 @@
     "url": "http://www.bengaluruairport.com",
     "timezone": "Asia/Kolkata"
   },
+  "BOS": {
+    "city": "Boston",
+    "country": "USA",
+    "url": "https://www.massport.com/logan-airport/",
+    "timezone": "America/New_York"
+  },
   "BRU": {
     "city": "Brussels",
     "country": "Belgium",
