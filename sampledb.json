@@ -1,19 +1,17 @@
 {
   "owner": "François",
-  "acl": {
-    "domains": [ "mozilla.com" ],
-    "emails": ["francois@fmarier.org"]
-  },
-  "trips": {
-    "Vancouver Work Week": {
+  "trips": [
+    {
+      "name": "LibrePlanet",
+      "url": "https://libreplanet.org/2017/",
       "legs": [
-        {"origin": "AKL", "destination": "YVR",
-         "departure": "2013-05-05T20:00", "arrival": "2013-05-05T14:15",
-         "mode": "plane", "id": "NZ84"},
-        {"origin": "YVR", "destination": "AKL",
-         "departure": "2013-05-10T20:00", "arrival": "2013-05-12T05:00",
-         "mode": "plane", "id": "NZ83"}
+        {"origin": "BOS", "destination": "YYZ",
+         "departure": "2017-03-27T12:15", "arrival": "2017-03-27T14:03",
+         "mode": "plane", "id": "AC361"},
+        {"origin": "YYZ", "destination": "YVR",
+         "departure": "2017-03-27T16:00", "arrival": "2017-03-27T18:01",
+         "mode": "plane", "id": "AC161"}
       ]
     }
-  }
+  ]
 }
