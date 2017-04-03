@@ -12,4 +12,4 @@ index.html: db.json whereintheworld airports.json
 	@./whereintheworld db.json > index.html
 
 upload: index.html
-	@scp -r index.html public/* whereis.fmarier.org:/var/www/whereis-fmarier/
+	@scp -r index.html img/ css/ whereis.fmarier.org:/var/www/whereis-fmarier/

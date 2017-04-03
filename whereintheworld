@@ -32,7 +32,7 @@ HTML_HEADER = '''<!DOCTYPE html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>Where in the World is %s?</title>
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -61,14 +61,14 @@ def city_link(city):
 
 def flight_link(trip_id):
     iata_code = trip_id[0:2]
-    image = '<img width="16" heigh="16" src="/img/iata/' + iata_code.lower() +'.png" alt="' + iata_code + '">'
+    image = '<img width="16" heigh="16" src="img/iata/' + iata_code.lower() +'.png" alt="' + iata_code + '">'
     url = 'http://flightaware.com/live/flight/' + trip_id
     return '<a href="' + url + '">' + image  + trip_id[2:] + '</a>'
 
 
 def train_link(trip_id, datetimestr):
     internal_code = trip_id[0:3]
-    image = '<img width="16" heigh="16" src="/img/train/' + internal_code.lower() + '.png" alt="' + internal_code + '">'
+    image = '<img width="16" heigh="16" src="img/train/' + internal_code.lower() + '.png" alt="' + internal_code + '">'
     url = ''
     if internal_code.lower() == 'via':
         d = datetime.strptime(datetimestr, '%Y-%m-%dT%H:%M')
