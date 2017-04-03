@@ -38,7 +38,6 @@ HTML_HEADER = '''<!DOCTYPE html>
 
 <h1>Where in the World is %s?</h1>
 
-<h2>Trips</h2>
 '''
 
 HTML_FOOTER = '''
@@ -129,8 +128,10 @@ def print_legs(legs):
 
 def print_trips(trips):
     if len(trips) < 1:
+        print("<p>Home!</p>")
         return
 
+    print("<h2>Trips</h2>")
     print("<ul>")
 
     for trip in trips:
