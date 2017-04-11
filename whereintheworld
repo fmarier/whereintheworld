@@ -80,6 +80,12 @@ def train_link(trip_id, datetimestr):
         return image + trip_id[3:]
 
 
+def bus_link(trip_id, datetimestr):
+    internal_code = trip_id[0:3]
+    image = '<img width="16" heigh="16" src="img/bus/' + internal_code.lower() + '.png" alt="' + internal_code + '">'
+    return image + trip_id[3:]
+
+
 def date(datetimestr):
     d = datetime.strptime(datetimestr, '%Y-%m-%dT%H:%M')
     return d.strftime('%d %b')
@@ -116,8 +122,11 @@ def print_legs(legs):
             separator = '✈'
             trip_id = flight_link(trip_id)
         elif mode == 'train':
-            # separator = '🚅'
+            separator = '🚅'
             trip_id = train_link(trip_id, leg['arrival'])
+        elif mode == 'bus':
+            separator = '🚌'
+            trip_id = bus_link(trip_id, leg['arrival'])
         elif mode == 'ferry':
             separator = '⛴'
 
