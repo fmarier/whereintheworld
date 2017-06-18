@@ -41,6 +41,12 @@
     "url": "http://www.aeroportsdeparis.fr",
     "timezone": "Europe/Paris"
   },
+  "CHC": {
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "url": "http://www.christchurchairport.co.nz/",
+    "timezone": "Pacific/Auckland"
+  },
   "CHT": {
     "city": "Chatham Islands",
     "country": "New Zealand",
@@ -183,6 +189,12 @@
     "url": "https://en.wikipedia.org/wiki/Niue_International_Airport",
     "timezone": "Pacific/Niue"
   },
+  "IVC": {
+    "city": "Invercargill",
+    "country": "New Zealand",
+    "url": "http://www.invercargillairport.co.nz/",
+    "timezone": "Pacific/Auckland"
+  },
   "JAX": {
     "city": "Jacksonville",
     "country": "USA",
@@ -313,7 +325,7 @@
     "city": "Rarotonga",
     "country": "Cook Islands",
     "url": "http://www.cookislandsairports.com/",
-    "timezone": "Pacific/Rarotonga"
+    "timezone": "Pacific/Auckland"
   },
   "SCL": {
     "city": "Santiago",
@@ -344,6 +356,12 @@
     "country": "USA",
     "url": "http://www.flysanjose.com/",
     "timezone": "America/Los_Angeles"
+  },
+  "SKS": {
+    "city": "Stewart Island",
+    "country": "New Zealand",
+    "url": "https://en.wikipedia.org/wiki/Ryan's_Creek_Aerodrome",
+    "timezone": "Pacific/Auckland"
   },
   "SYD": {
     "city": "Sydney",
