@@ -71,6 +71,12 @@
     "url": "http://www.new-chitose-airport.jp/en",
     "timezone": "Asia/Tokyo"
   },
+  "CXH": {
+    "city": "Vancouver",
+    "country": "Canada",
+    "url": "https://en.wikipedia.org/wiki/Vancouver_Harbour_Flight_Centre",
+    "timezone": "America/Vancouver"
+  },
   "DEL": {
     "city": "New Delhi",
     "country": "India",
@@ -427,6 +433,12 @@
     "city": "Vancouver",
     "country": "Canada",
     "url": "http://www.yvr.ca/",
+    "timezone": "America/Vancouver"
+  },
+  "YWH": {
+    "city": "Victoria",
+    "country": "Canada",
+    "url": "https://en.wikipedia.org/wiki/Victoria_Inner_Harbour_Airport",
     "timezone": "America/Vancouver"
   },
   "YYC": {
