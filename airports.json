@@ -178,6 +178,12 @@
     "url": "http://www.flydulles.com/",
     "timezone": "America/New_York"
   },
+  "IAH": {
+    "city": "Houston",
+    "country": "USA",
+    "url": "http://www.fly2houston.com/",
+    "timezone": "America/Chicago"
+  },
   "ICN": {
     "city": "Seoul",
     "country": "South Korea",
