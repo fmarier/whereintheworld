@@ -11,6 +11,12 @@
     "url": "http://www.swedavia.com/arlanda/",
     "timezone": "Europe/Stockholm"
   },
+  "AUS": {
+    "city": "Austin",
+    "country": "USA",
+    "url": "http://www.austintexas.gov/airport",
+    "timezone": "America/Chicago"
+  },
   "BLI": {
     "city": "Bellingham",
     "country": "USA",
