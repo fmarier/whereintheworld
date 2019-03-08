@@ -125,6 +125,11 @@
     "url": "http://www.frankfurt-airport.com",
     "timezone": "Europe/Berlin"
   },
+  "GCM": {
+    "city": "George Town",
+    "country": "Cayman Islands",
+    "timezone": "America/Panama"
+  },
   "GEA": {
     "city": "Nouméa",
     "country": "New Caledonia",
