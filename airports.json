@@ -83,6 +83,12 @@
     "url": "https://en.wikipedia.org/wiki/Vancouver_Harbour_Flight_Centre",
     "timezone": "America/Vancouver"
   },
+  "CYB": {
+    "city": "Cayman Brac",
+    "country": "Cayman Islands",
+    "url": "https://www.caymanairports.com/",
+    "timezone": "America/Panama"
+  },
   "DEL": {
     "city": "New Delhi",
     "country": "India",
@@ -128,6 +134,7 @@
   "GCM": {
     "city": "George Town",
     "country": "Cayman Islands",
+    "url": "https://www.caymanairports.com/",
     "timezone": "America/Panama"
   },
   "GEA": {
