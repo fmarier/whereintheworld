@@ -131,6 +131,11 @@
     "url": "http://www.frankfurt-airport.com",
     "timezone": "Europe/Berlin"
   },
+  "FSP": {
+    "city": "Saint-Pierre",
+    "country": "France",
+    "timezone": "America/Miquelon"
+  },
   "GCM": {
     "city": "George Town",
     "country": "Cayman Islands",
@@ -285,6 +290,11 @@
     "url": "http://www.miaa.gov.ph",
     "timezone": "Asia/Manila"
   },
+  "MQC": {
+    "city": "Miquelon",
+    "country": "France",
+    "timezone": "America/Miquelon"
+  },
   "MUC": {
     "city": "Munich",
     "country": "Germany",
@@ -422,6 +432,12 @@
     "country": "Canada",
     "url": "http://flyeia.com/",
     "timezone": "America/Edmonton"
+  },
+  "YHZ": {
+    "city": "Halifax",
+    "country": "Canada",
+    "url": "https://halifaxstanfield.ca/",
+    "timezone": "America/Halifax"
   },
   "YLW": {
     "city": "Kelowna",
