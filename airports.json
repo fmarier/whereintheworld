@@ -481,6 +481,12 @@
     "url": "https://en.wikipedia.org/wiki/Victoria_Inner_Harbour_Airport",
     "timezone": "America/Vancouver"
   },
+  "YXY": {
+    "city": "Whitehorse",
+    "country": "Canada",
+    "url": "http://www.hpw.gov.yk.ca/whitehorse_airport.html",
+    "timezone": "America/Whitehorse"
+  },
   "YYC": {
     "city": "Calgary",
     "country": "Canada",
