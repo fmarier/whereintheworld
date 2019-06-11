@@ -499,6 +499,12 @@
     "url": "http://www.cyyf.ca/",
     "timezone": "America/Vancouver"
   },
+  "YYT": {
+    "city": "St. John's",
+    "country": "Canada",
+    "url": "https://stjohnsairport.com/",
+    "timezone": "America/St_Johns"
+  },
   "YYZ": {
     "city": "Toronto",
     "country": "Canada",
