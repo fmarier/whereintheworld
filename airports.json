@@ -475,6 +475,12 @@
     "url": "http://www.yvr.ca/",
     "timezone": "America/Vancouver"
   },
+  "YWG": {
+    "city": "Winnipeg",
+    "country": "Canada",
+    "url": "https://www.waa.ca/",
+    "timezone": "America/Winnipeg"
+  },
   "YWH": {
     "city": "Victoria",
     "country": "Canada",
