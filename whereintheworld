@@ -53,7 +53,10 @@ with codecs.open('airports.json', 'r', 'utf-8') as fh:
 def city_link(city):
     if city in AIRPORTS:
         details = AIRPORTS[city]
-        return '<a href="' + details['url'] + '">' + details['city'] + '</a>'
+        if 'url' in details:
+            return '<a href="' + details['url'] + '">' + details['city'] + '</a>'
+        else:
+            return details['city']
     else:
         return city
 
@@ -116,7 +119,9 @@ def print_legs(legs):
         arrival_time = time(leg['arrival'])
 
         mode = leg['mode']
-        trip_id = leg['id']
+        trip_id = None
+        if 'id' in leg:
+            trip_id = leg['id']
         separator = '&mdash;'
         if mode == 'plane':
             separator = '✈'
@@ -131,8 +136,12 @@ def print_legs(legs):
             separator = '⛴'
 
         optional_date = dateline_crossing(leg['departure'], leg['arrival'])
-        print('      <li>' + departure_date + ': ' + origin + ' ' + departure_time + ' ' +
-              separator + ' ' + destination + ' ' + arrival_time + optional_date + ' (' + trip_id + ')</li>')
+        line = '      <li>' + departure_date + ': ' + origin + ' ' + departure_time + ' '
+        line += separator + ' ' + destination + ' ' + arrival_time + optional_date
+        if trip_id:
+            line += ' (' + trip_id + ')'
+        line += '</li>'
+        print(line)
 
 
 def print_trips(trips):
