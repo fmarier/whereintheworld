@@ -5,6 +5,12 @@
     "url": "http://www.aucklandairport.co.nz/",
     "timezone": "Pacific/Auckland"
   },
+  "AMS": {
+    "city": "Amsterdam",
+    "country": "Canada",
+    "url": "https://www.schiphol.nl/",
+    "timezone": "Europe/Amsterdam"
+  },
   "ARN": {
     "city": "Stockholm",
     "country": "Sweden",
