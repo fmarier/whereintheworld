@@ -16,7 +16,7 @@ Simple application to share your travel plans with friends, family and colleague
 
 ## Copyright notice
 
-Copyright (C) 2013, 2014, 2017  Francois Marier <francois@fmarier.org>
+Copyright (C) 2013, 2014, 2017, 2018, 2019  Francois Marier <francois@fmarier.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
