@@ -439,6 +439,12 @@
     "url": "http://flyeia.com/",
     "timezone": "America/Edmonton"
   },
+  "YGG": {
+    "city": "Salt Spring Island",
+    "country": "Canada",
+    "url": "https://en.wikipedia.org/wiki/Ganges_Water_Aerodrome",
+    "timezone": "America/Vancouver"
+  },
   "YHZ": {
     "city": "Halifax",
     "country": "Canada",
