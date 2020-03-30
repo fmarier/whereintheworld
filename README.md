@@ -12,11 +12,11 @@ Simple application to share your travel plans with friends, family and colleague
 ### Usage
 
 1. generate the HTML page: `make index.html`
-2. copy the HTML page to the serve: `make upload`
+2. copy the HTML page to the server: `make upload`
 
 ## Copyright notice
 
-Copyright (C) 2013, 2014, 2017, 2018, 2019  Francois Marier <francois@fmarier.org>
+Copyright (C) 2013, 2014, 2017, 2018, 2019, 2020  Francois Marier <francois@fmarier.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
