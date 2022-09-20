@@ -290,6 +290,12 @@
     "url": "http://www.melbourneairport.com.au/",
     "timezone": "Australia/Melbourne"
   },
+  "MIA": {
+    "city": "Miami",
+    "country": "USA",
+    "url": "https://www.miami-airport.com/",
+    "timezone": "America/New_York"
+  },
   "MNL": {
     "city": "Manila",
     "country": "Philippines",
