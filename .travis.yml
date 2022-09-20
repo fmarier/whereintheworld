@@ -1,5 +1,0 @@
-before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -y yajl-tools
-
-script: make test
