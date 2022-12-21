@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Where in the World
-Copyright (C) 2013, 2014, 2017  Francois Marier <francois@fmarier.org>
+Copyright (C) 2013-2022  Francois Marier <francois@fmarier.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -75,7 +75,7 @@ def train_link(trip_id, datetimestr):
     if internal_code.lower() == 'via':
         d = datetime.strptime(datetimestr, '%Y-%m-%dT%H:%M')
         date = d.strftime('%Y-%m-%d')
-        url = 'http://reservia.viarail.ca/tsi/GetTrainStatus.aspx?TsiCCode=VIA&TsiTrainNumber=%s&TrainInstanceDate=%s' % (trip_id[3:], date)
+        url = 'https://tsimobile.viarail.ca/index-fr.html#%s' % trip_id[3:]
     # TODO: add support for Amtrak tracking URLs
     if url:
         return '<a href="' + url + '">' + image + trip_id[3:] + '</a>'
