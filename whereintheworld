@@ -64,7 +64,7 @@ def city_link(city):
 def flight_link(trip_id):
     iata_code = trip_id[0:2]
     image = '<img width="16" heigh="16" src="img/iata/' + iata_code.lower() +'.png" alt="' + iata_code + '">'
-    url = 'http://flightaware.com/live/flight/' + trip_id
+    url = 'https://www.flightstats.com/v2/flight-tracker/%s/%s' % (iata_code, trip_id[2:])
     return '<a href="' + url + '">' + image  + trip_id[2:] + '</a>'
 
 
