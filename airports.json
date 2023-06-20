@@ -534,5 +534,11 @@
     "country": "Canada",
     "url": "http://torontopearson.com/",
     "timezone": "America/Toronto"
+  },
+  "ZNA": {
+    "city": "Nanaimo",
+    "country": "Canada",
+    "url": "https://en.wikipedia.org/wiki/Nanaimo_Harbour_Water_Aerodrome",
+    "timezone": "America/Vancouver"
   }
 }
