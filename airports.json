@@ -83,6 +83,12 @@
     "url": "http://www.new-chitose-airport.jp/en",
     "timezone": "Asia/Tokyo"
   },
+  "CUN": {
+    "city": "Cancún",
+    "country": "Mexico",
+    "url": "https://cancun-airport.net/",
+    "timezone": "America/Cancun"
+  },
   "CXH": {
     "city": "Vancouver",
     "country": "Canada",
