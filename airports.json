@@ -284,6 +284,12 @@
     "url": "http://www.ana.pt/en-US/Pages/Homepage.aspx",
     "timezone": "Europe/Lisbon"
   },
+  "LKE": {
+    "city": "Seattle",
+    "country": "USA",
+    "url": "https://en.wikipedia.org/wiki/Kenmore_Air_Harbor_Seaplane_Base",
+    "timezone": "America/Los_Angeles"
+  },
   "MCO": {
     "city": "Orlando",
     "country": "USA",
