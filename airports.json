@@ -451,6 +451,12 @@
     "url": "http://www.wellingtonairport.co.nz/",
     "timezone": "Pacific/Auckland"
   },
+  "YBL": {
+    "city": "Campbell River",
+    "country": "Canada",
+    "url": "http://www.crairport.ca/",
+    "timezone": "America/Vancouver"
+  },
   "YEG": {
     "city": "Edmonton",
     "country": "Canada",
