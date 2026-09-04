@@ -325,6 +325,12 @@
     "url": "http://www.munich-airport.de",
     "timezone": "Europe/Berlin"
   },
+  "NAS": {
+    "city": "Nassau",
+    "country": "Bahamas",
+    "url": "https://nassaulpia.com/",
+    "timezone": "America/Toronto"
+  },
   "NLK": {
     "city": "Norfolk Island",
     "country": "Norfolk Island",
