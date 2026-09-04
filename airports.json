@@ -475,6 +475,12 @@
     "url": "https://en.wikipedia.org/wiki/Ganges_Water_Aerodrome",
     "timezone": "America/Vancouver"
   },
+  "YHU": {
+    "city": "Montréal",
+    "country": "Canada",
+    "url": "https://www.metmtl.com/",
+    "timezone": "America/Montreal"
+  },
   "YHZ": {
     "city": "Halifax",
     "country": "Canada",
