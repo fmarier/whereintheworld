@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Where in the World
-Copyright (C) 2013-2022  Francois Marier <francois@fmarier.org>
+Copyright (C) 2013-2026  Francois Marier <francois@fmarier.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 import argparse
-import codecs
 from datetime import datetime
 import json
 import os.path
@@ -46,7 +45,7 @@ HTML_FOOTER = '''
 '''
 
 AIRPORTS = {}
-with codecs.open('airports.json', 'r', 'utf-8') as fh:
+with open('airports.json', 'r', encoding='utf-8') as fh:
     AIRPORTS = json.loads(fh.read())
 
 
@@ -172,7 +171,7 @@ def print_trips(trips):
 
 def generate_itinerary(tripdetails):
     trips = {}
-    with codecs.open(tripdetails, 'r', 'utf-8') as fh:
+    with open(tripdetails, 'r', encoding='utf-8') as fh:
         trips = json.loads(fh.read())
 
     owner = trips['owner']
